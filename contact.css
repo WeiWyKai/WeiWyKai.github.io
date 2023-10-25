@@ -1,0 +1,168 @@
+html, body{  
+    margin: 0;
+    padding: 0;
+    background-color: rgb(250, 238, 222);
+    height: 100%;
+ 
+}
+
+h1{
+    padding: 10px 0;
+    margin: 5px 5px;
+}
+
+h1, nav {
+    background-color: rgb(231, 197, 111);
+    text-align: center;
+    box-shadow: 2px 10px 10px 3px rgb(223, 114, 114);
+    border-bottom: solid 2px;
+    border-radius: 10px;
+}
+
+#accueil{
+    width: 5em;
+    height: 3em;
+    float: left;
+    position: absolute;
+    left: 10px;
+    z-index: 1;
+    top: 10px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    margin: 0 5px;
+    height: 3em ;
+    list-style-type: none;
+    justify-content: space-around;
+ 
+}
+
+h1, .navbar {
+    background-color: rgb(231, 197, 111);
+    text-align: center;
+    box-shadow: 2px 10px 10px 3px rgb(223, 114, 114);
+    border-bottom: solid 2px;
+    border-radius: 10px;
+}
+
+.navbar>a{
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px ;
+
+}
+
+.dropList{
+    position: relative;
+    display: block;
+    min-width: fit-content;
+}
+
+.dropButton{
+    background-color: rgb(231, 197, 111);
+    padding: 10px ;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.prodList{
+    display: none;
+    position: absolute;
+    border-radius: 10px;
+    background-color:rgb(231, 197, 111);
+    max-width: fit-content;
+    box-shadow: 2px 10px 10px 3px rgb(223, 114, 114);
+    z-index: 1;
+    height: max-content;
+}
+
+.navbar a:hover {
+    color: red;
+    border-bottom: solid 2px black; 
+    border-radius: 10px;
+    transition: 1s;
+    background-color: rgb(250, 238, 222);
+}
+
+.dropButton:hover{
+    color: red;
+    border-bottom: solid 2px black; 
+    border-radius: 10px;
+    transition: 1s;
+    background-color: rgb(250, 238, 222)
+}
+
+.dropList:hover .prodList{
+    display: block;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+.prodList a{
+    color: black;
+    text-decoration: none;
+    padding: 10px 70px;
+  
+}
+
+#contact{
+    display: flex;
+    flex-direction: column;
+    align-items:stretch;
+    justify-content: space-between;
+    height: 100%;
+}
+main{
+    display: flex;
+    justify-content: center;
+}
+#contact2{
+    display: flex;
+    flex-direction: column;
+    gap: 5Px;
+    background-color: white;    
+    border-radius: 10px;
+    list-style-type: none;
+    width: 20%;
+}
+
+.red{
+    color: red;
+}
+
+footer{
+    background-color: rgb(231, 197, 111);
+    text-align: center;
+    box-shadow: 2px 10px 10px 3px rgb(223, 114, 114);
+    border-bottom: solid 2px;
+    border-radius: 10px;
+    height: 2em;
+    padding-top: 1em;
+    position:relative;
+    bottom: 0;
+    margin: 10px 5px;
+}
+
+@media screen and (min-width: 550px) and (max-width: 
+750px) {
+    #commentaire{
+        width: 400px;
+    }
+
+}
+
+@media screen and (max-width: 
+550px) {
+    #commentaire{
+        width: 300px;
+    }
+
+    h1,.navbar{
+        font-size: small;
+    }
+}

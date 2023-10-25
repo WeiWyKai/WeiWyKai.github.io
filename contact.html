@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CONTACT</title>
+    <link rel="stylesheet" href="./contact.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    
+    <div id="contact">
+        <header>
+            <a href="./accueil.html"><img src="../image/LUUX Catering Events-Final-01.png" alt="Accueil" id="accueil"></a>
+            <h1>LUUX <span class="red">Cat</span>ering <span class="red">Ev</span>ents
+            </h1>
+            <div class="navbar">
+                <a href="./accueil.html" target="_blank">Accueil</a>
+                <a href="./contact.html" target="_blank">Contact</a>
+                <div class="dropList">
+                    <button class="dropButton">Produits</button>
+                    <div class="prodList">
+                        <a href="#">Sucrés</a>
+                        <a href="#">Salés</a>
+                        <a href="#">Créations</a>
+                        <a href="#">Spécialités</a>
+                    </div>
+                </div>
+            </div>
+        </header>   
+
+        <main>
+            <fieldset id="contact2">
+                <legend>Contactez nous:</legend>
+                <li>
+                    <label for="nom">Nom: </label>
+                    <input type="text" placeholder="Nom">   
+                <li>
+                    <label for="prénom">Prénom: </label>
+                    <input type="text" placeholder="Prénom">
+                </li>
+                <li> 
+                    <label for="email">Date de naissance: </label>
+                    <input type="date">
+                </li>
+                <li> 
+                    <label for="email">Email: </label>
+                    <input type="email" placeholder="Adresse e-mail">
+                </li>
+                <li> 
+                    <label for="email">Genre: </label>
+                    <select name="genre" id="genre">
+                        <option value="homme">Homme</option>
+                        <option value="femme">Femme</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="commentaire">Commentaires:</label>
+                <textarea name="commentaire" id="commentaire" cols="60" rows="10" placeholder="Commentaire"></textarea>
+                </li>                    
+                <button>Envoyer</button>
+            </fieldset>
+        </main>
+
+        <footer>
+            <div >S.A.S. LUUX <span class="red">Cat</span>ering <span class="red">Ev</span>ents</div>
+        </footer>
+    </div>
+
+</body>
+
+</html>
